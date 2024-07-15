@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from './Componenet/LandingPage';
+import BookingForm from './Componenet/BookingForm';
+import ConfirmationPopup from './Componenet/ConfirmationPopup';
+import { setStep, setBookingDetails, resetBooking } from './Redux/reducer';
+import { useSelector, useDispatch } from 'react-redux';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  const { step, bookingDetails } = useSelector((state) => state.booking);
+
+
+  const handleSelectHorse = () => {
+    dispatch(setStep(1));
+  };
+
+  const handleSubmit = (details) => {
+    dispatch(setBookingDetails(details));
+    dispatch(setStep(2));
+  };
+
+  const handleBack = () => {
+    dispatch(setStep(0));
+  };
+
+  const handleClose = () => {
+    dispatch(resetBooking());
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {step === 0 && <LandingPage onBookNow={handleSelectHorse} />}
+      {step === 1 && <BookingForm onSubmit={handleSubmit} onBack={handleBack} />}
+      {step === 2 && <ConfirmationPopup bookingDetails={bookingDetails} onClose={handleClose} />}
     </div>
   );
-}
+};
 
 export default App;
+
