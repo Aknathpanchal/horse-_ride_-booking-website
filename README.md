@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Horse Ride Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Horse Ride Booking System is a user-friendly web application that allows users to book a horse ride. The system includes a landing page showcasing available horses, a booking form to select a horse and a time slot, and a confirmation notification with a calendar invite.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Landing Page:** Displays available horses with their pictures and names, and a "Book Now" button.
+- **Booking Form:** Allows users to select a horse, choose a date and time slot, and enter their details.
+- **Confirmation Popup:** Shows a booking confirmation with a thank you message and a calendar invite.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Design Guidelines
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Color Scheme
 
-### `npm test`
+- Use a friendly and inviting color palette with soothing tones.
+- Ensure good contrast for readability.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Typography
 
-### `npm run build`
+- Use clean and legible fonts.
+- Highlight important information with appropriate font sizes and weights.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Imagery
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Use high-quality images of the horses.
+- Include icons or illustrations to enhance the user experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Interaction
 
-### `npm run eject`
+- Smooth transitions and animations for form submission and pop-up notification.
+- User-friendly date and time picker for selecting the booking slot.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Development Guidelines
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Framework: React.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **State Management:** Use Redux or Flux.
+- **Animations:** Use libraries such as Framer Motion, React Spring, or GSAP.
+- **Build Tools:** Webpack and Babel.
+- **Package Management:** NPM.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- **React.js**: Frontend framework.
+- **Redux**: State management.
+- **Framer Motion**: For animations.
+- **Tailwind**: For UI.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/horse-ride-booking-system.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd horse-ride-booking-system
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Start the development server:
+    ```bash
+    npm start
+    ```
+2. Open your browser and navigate to `http://localhost:3000`.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
